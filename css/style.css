@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #aaa;
+}
+
+.navbar{
+    color: white;
+    height: 12vh;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    padding: 0 7rem;
+    font-size: 6rem;
+}
+
+#navbar--shoppingcard{
+    color: #fff;
+}
+
+#navbar--shoppingcard:hover{
+    cursor: pointer;
+}
+
+#navbar--shoppingcard::before{
+    content: attr(data-count);
+    display: flex;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: white;
+
+    position: relative;
+    font-weight: bold;
+    left: 6rem;
+    top: 1rem;
+}
+
+.container {
+    justify-content: center;
+    height: 88vh;
+    display: flex;
+    padding: 0 2rem;
+}
+
+.contents {
+    background-color: #ddd;
+    display: flex;
+    min-width: 80vw;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.item {
+    background-color: #fff;
+    max-width: 20rem;
+    max-height: 40rem;
+    padding: 1rem;
+    flex: 1 1 20rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* New styles for layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 40rem; /* Ensures a consistent height for all items */
+}
+
+.article-header {
+    margin-bottom: 1rem;
+}
+
+.article-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.article-image,
+.article-image>img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.article-details {
+    margin-bottom: 1rem;
+}
+
+.article-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.article-description {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.article-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
