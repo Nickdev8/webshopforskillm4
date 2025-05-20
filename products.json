@@ -3,24 +3,42 @@
         "name": "fortnite",
         "price": "$19,99",
         "description": "this is a good game, but only for kids",
-        "image": "/img/1.png"
+        "image": "./img/1.png"
     },
     {
         "name": "spiderman",
-        "price": "$9,95",
+        "price": "$2,92",
         "description": "spiderman good",
-        "image": "/img/2.png"
+        "image": "./img/2.png"
     },
     {
         "name": "spiderman",
-        "price": "$9,95",
+        "price": "$5123519,25",
         "description": "spiderman good",
-        "image": "/img/3.png"
+        "image": "./img/3.png"
     },
     {
         "name": "spiderman",
-        "price": "$9,95",
+        "price": "$91,95",
         "description": "spiderman good",
-        "image": "/img/5.png"
+        "image": "./img/4.png"
+    },
+    {
+        "name": "spiderman",
+        "price": "$2,92",
+        "description": "spiderman good",
+        "image": "./img/2.png"
+    },
+    {
+        "name": "spiderman",
+        "price": "$5123519,25",
+        "description": "spiderman good",
+        "image": "./img/3.png"
+    },
+    {
+        "name": "spiderman",
+        "price": "$91,95",
+        "description": "spiderman good",
+        "image": "./img/4.png"
     }
 ]
