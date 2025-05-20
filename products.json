@@ -40,5 +40,17 @@
         "price": "$91,95",
         "description": "spiderman good",
         "image": "./img/4.png"
+    },
+    {
+        "name": "spiderman",
+        "price": "$5123519,25",
+        "description": "spiderman good",
+        "image": "./img/3.png"
+    },
+    {
+        "name": "spiderman",
+        "price": "$91,95",
+        "description": "spiderman good",
+        "image": "./img/4.png"
     }
 ]

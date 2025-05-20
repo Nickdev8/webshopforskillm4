@@ -18,7 +18,7 @@
                     <p class="article-description"><?php echo htmlspecialchars($product['description']); ?></p>
                 </div>
                 <div class="article-actions">
-                    <button class="btn">Add to Cart</button>
+                    <!-- <button class="btn">Add to Cart</button> -->
                     <button class="btn">Buy Now</button>
                 </div>
             </article>
