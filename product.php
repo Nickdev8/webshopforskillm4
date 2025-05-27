@@ -36,11 +36,11 @@ $toggleUrl = $_SERVER['PHP_SELF']
     <meta charset="UTF-8">
     <title><?= htmlspecialchars($selected['name']) ?></title>
     <script src="./fontawesome/js/all.js"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/reset.css?v=2.0.1">
+    <link rel="stylesheet" href="css/style.css?v=2.0.1">
+    <link rel="stylesheet" href="css/product.css?v=2.0.1">
     <?php if ($isDark): ?>
-        <link rel="stylesheet" href="css/theme-dark.css">
+        <link rel="stylesheet" href="css/theme-dark.css?v=2.0.1">
     <?php endif; ?>
 </head>
 <body<?= $isDark ? ' class="dark"' : '' ?>>
