@@ -1,0 +1,50 @@
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* global layout tweaks */
+body.dark .container,
+body.dark .contents {
+  background: #181818;
+}
+body.dark .sidebar {
+  background-color: #222;
+}
+
+/* page wrapper */
+body.dark .main-content {
+  background: #1e1e1e;
+}
+
+/* product page */
+body.dark .product-image img {
+  filter: brightness(0.9);
+}
+body.dark .product-sidebar {
+  background: #2b2b2b;
+  color: #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+body.dark .product-sidebar h1,
+body.dark .product-sidebar p {
+  color: #eee;
+}
+
+/* generic buttons & items */
+body.dark .btn {
+  background: #444;
+  color: #fafafa;
+}
+body.dark .btn:hover {
+  background: #555;
+}
+body.dark .item {
+  background: #242424;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+body.dark .article-title,
+body.dark .article-description,
+body.dark .article-price {
+  color: #ddd;
+}

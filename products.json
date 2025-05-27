@@ -1,56 +1,122 @@
 [
-    {
-        "name": "fortnite",
-        "price": "$19,99",
-        "description": "this is a good game, but only for kids",
-        "image": "./img/1.png"
-    },
-    {
-        "name": "spiderman",
-        "price": "$2,92",
-        "description": "spiderman good",
-        "image": "./img/2.png"
-    },
-    {
-        "name": "spiderman",
-        "price": "$5123519,25",
-        "description": "spiderman good",
-        "image": "./img/3.png"
-    },
-    {
-        "name": "spiderman",
-        "price": "$91,95",
-        "description": "spiderman good",
-        "image": "./img/4.png"
-    },
-    {
-        "name": "spiderman",
-        "price": "$2,92",
-        "description": "spiderman good",
-        "image": "./img/2.png"
-    },
-    {
-        "name": "spiderman",
-        "price": "$5123519,25",
-        "description": "spiderman good",
-        "image": "./img/3.png"
-    },
-    {
-        "name": "spiderman",
-        "price": "$91,95",
-        "description": "spiderman good",
-        "image": "./img/4.png"
-    },
-    {
-        "name": "spiderman",
-        "price": "$5123519,25",
-        "description": "spiderman good",
-        "image": "./img/3.png"
-    },
-    {
-        "name": "spiderman",
-        "price": "$91,95",
-        "description": "spiderman good",
-        "image": "./img/4.png"
-    }
+  {
+    "year": 1960,
+    "name": "Ford Mustang (Concept)",
+    "price": "$34,990",
+    "description": "Early prototype of the Mustang that inspired the production model, showcasing classic pony car lines.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/1964_12_Ford_Mustang.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1951,
+    "name": "Hudson Hornet (Doc Hudson)",
+    "price": "$42,500",
+    "description": "The legendary 'Fabulous Hudson Hornet' made famous by its racing success and cinematic appearance.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Hudson_Hornet_4-door_burgundy.JPG",
+    "catagory": "car"
+  },
+  {
+    "year": 1957,
+    "name": "Chevrolet Bel Air",
+    "price": "$38,750",
+    "description": "Iconic ’57 Bel Air with signature chrome tailfins and a powerful V8 heart under the hood.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/57_Chevy_BelAir_2_Door_Hardtop.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1963,
+    "name": "Volkswagen Beetle",
+    "price": "$29,990",
+    "description": "The timeless 'people's car' known for its distinctive rounded shape and air-cooled engine.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/VW_K%C3%A4fer_Baujahr_1966.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1969,
+    "name": "Dodge Charger",
+    "price": "$45,000",
+    "description": "Muscle car icon with aggressive styling and HEMI power that defined an era of American performance.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/1969_Dodge_Charger_(21572136732).jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1962,
+    "name": "Jaguar E-Type",
+    "price": "$65,500",
+    "description": "Often hailed as one of the most beautiful cars ever made, with stunning curves and a top speed over 150 mph.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Jaguar_E-Type_Series_1_3.8_Litre_1961.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1955,
+    "name": "Mercedes-Benz 300SL Gullwing",
+    "price": "$120,000",
+    "description": "Rare and exquisite, with distinctive gullwing doors and pioneering fuel-injection technology.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Fox_Classic_Car_Collection%2C_2008_%2802%29.JPG",
+    "catagory": "car"
+  },
+  {
+    "year": 1953,
+    "name": "Chevrolet Corvette C1",
+    "price": "$52,300",
+    "description": "America's first production sports car with a fiberglass body and distinctive two-tone color scheme.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Chevrolet_Corvette_C1_front-right_2016_Shanghai_Auto_Museum.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1963,
+    "name": "Aston Martin DB5",
+    "price": "$89,750",
+    "description": "British grand tourer made famous by its appearances in James Bond films, featuring elegant styling.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Aston_Martin_DB5_%28Skyfall%29.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1967,
+    "name": "Ferrari 275 GTB",
+    "price": "$250,000",
+    "description": "A rare Italian masterpiece with a Colombo V12 engine and graceful, aerodynamic bodywork.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f3/1966_Ferrari_275_GTB_sn_08549%2C_front_left_%28Greenwich_2019%29.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1961,
+    "name": "Lincoln Continental",
+    "price": "$47,600",
+    "description": "Luxury flagship sedan known for its suicide doors and refined V8 performance.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/2019_Lincoln_Continental_%22Select%22%2C_front_10.29.19.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1964,
+    "name": "Pontiac GTO",
+    "price": "$39,850",
+    "description": "Often credited as the first true muscle car, packing a powerful V8 and sporty styling.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/2005_Pontiac_GTO%2C_front_left%2C_10-28-2022.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1959,
+    "name": "Cadillac Eldorado",
+    "price": "$55,000",
+    "description": "Lavish American luxury car with iconic tailfins and a plush, spacious interior.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/1963_Cadillac_Eldorado_convertible%2C_front_5.19.19.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1966,
+    "name": "Shelby Cobra 427",
+    "price": "$110,000",
+    "description": "High-performance roadster combining British chassis with American V8 power for blistering acceleration.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Shelby_AC_427_Cobra_vl_blue.jpg",
+    "catagory": "car"
+  },
+  {
+    "year": 1967,
+    "name": "Chevrolet Camaro SS",
+    "price": "$41,300",
+    "description": "First-generation Camaro in Super Sport trim with performance suspension and a bold front grille.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Chevrolet_Camaro_RS_327_1968_%28cropped%29.jpg",
+    "catagory": "car"
+  }
 ]

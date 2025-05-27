@@ -1,15 +1,37 @@
 <header class="site-header">
 
     <div class="navbar">
-        <a href="index.php" class="logo">
-            <img src="img/logo.png" alt="Logo" />
-        </a>
+        <div>
+
+            <a href="index.php" class="logo">
+                <img src="img/logo.png" alt="Logo" />
+            </a>
+
+            <?php
+            // build a URL that toggles dark on/off while preserving other params
+            $qs = $_GET;
+            if ($isDark) {
+                unset($qs['dark']);
+            } else {
+                $qs['dark'] = 'true';
+            }
+            $toggleUrl = $_SERVER['PHP_SELF']
+                . (count($qs)
+                    ? '?' . http_build_query($qs)
+                    : '');
+            ?>
+            <a href="<?= htmlspecialchars($toggleUrl) ?>" class="btn toggle-dark">
+                <?= $isDark ? 'Light Mode' : 'Dark Mode' ?>
+            </a>
+
+
+        </div>
         <div>
             <ul class="nav-links">
-                <li><a href="?page=home">Home</a></li>
-                <li><a href="?page=producten">Producten</a></li>
-                <li><a href="?page=contact">Contact</a></li>
-                <li><a id="navbar--shoppingcard" data-count="1"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="?page=home<?= $isDark ? '&dark=true"' : '' ?>">Home</a></li>
+                <li><a href="?page=producten<?= $isDark ? '&dark=true"' : '' ?>">Producten</a></li>
+                <li><a href="?page=contact<?= $isDark ? '&dark=true"' : '' ?>">Contact</a></li>
+                <li><a id="navbar--shoppingcard<?= $isDark ? '&dark=true"' : '' ?>" data-count="1"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
     </div>

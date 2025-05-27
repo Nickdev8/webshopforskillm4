@@ -1,61 +1,98 @@
+/* ─── GLOBAL LAYOUT ───────────────────────────────────────── */
+
+/* 80-vw centered content area */
 .container {
-    display: flex;
-    padding: 0 2rem;
-    margin: 1rem 0;
-    background-color: #ddd;
-    justify-self: center;
-    width: 80vw;
+  display: flex;
+  width: 80vw;
+  padding: 0 2rem;
+  background-color: #ddd;
+  margin: 0 auto;
 }
 
+/* inner flex-wrap grid of items */
 .contents {
-    width: 100%;
-    display: flex;
-    min-width: 80vw;
-    justify-content: left;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem 0;
-    overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+  overflow-y: auto;
 }
 
-
-.separator {
-    margin: 2rem auto;
+/* three-column page wrapper (header/sidebar/main/sidebar) */
+.page-layout {
+  display: flex;
+  width: 100%;
+}
+.page-layout > .sidebar    { flex: 0 0 10vw; }
+.page-layout > .main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.separator:empty::before {
-    content: "\00a0";
-    display: block;
-}
+/* simple two-column split */
 .split {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: space-between
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.split > p,
+.split > div {
+  flex: 1;
 }
 
-.split>p,
-.split>div {
-    flex: 1;
+/* horizontal separator */
+.separator {
+  margin: 2rem auto;
+}
+.separator:empty::before {
+  content: "\00a0";
+  display: block;
 }
 
-.img-cropped {
-    width: 28rem;
-    height: 15rem;
-    object-fit: cover;
-    border-radius: 8px;
-}
 
-.img-cropped-wide {
-    width: 38rem;
-    height: 15rem;
-    object-fit: cover;
-    border-radius: 8px;
-}
+/* ─── UTILITIES ───────────────────────────────────────────── */
 
+/* cropped image variants */
+.img-cropped,
+.img-cropped-wide,
 .img-cropped-small {
-    width: 18rem;
-    height: 25rem;
-    object-fit: cover;
-    border-radius: 8px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.img-cropped       { width: 28rem; height: 15rem; }
+.img-cropped-wide  { width: 38rem; height: 15rem; }
+.img-cropped-small { width: 18rem; height: 25rem; }
+
+
+/* ─── GENERIC COMPONENTS ──────────────────────────────────── */
+
+/* repeat-y pink sidebar graphic */
+.sidebar {
+  background-image: url('../img/sidebar.png');
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 100% auto;
+  background-color: lightpink;
+  width: 10vw;
+}
+
+/* standard button */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #2980b9;
 }

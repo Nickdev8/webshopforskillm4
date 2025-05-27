@@ -1,12 +1,15 @@
-<div class="cta-section">
-    <img src="img/haha.png" class="cta-image" alt="Logo" draggable="false" />
-    <div class="cta-overlay">
-        <h2>koop onze prudiucten!</h2>
-        <p>we hebben heel veel autos</p>
-        <a href="?page=subscribe" class="cta-button btn">Buy Now</a>
+<div style="padding:0 !important;">
+    <div class="cta-section">
+        <img src="img/haha.png" class="cta-image" alt="Logo" draggable="false" />
+        <div class="cta-overlay">
+            <h2>We hebben autos!</h2>
+            <a href="#autos" class="cta-button btn">AUTOS!</a>
+        </div>
     </div>
 </div>
 
+
+<!-- i placed the css here so i can inslude_once it in one command in index.php -->
 <style>
     .cta-section {
         position: relative;

@@ -1,3 +1,5 @@
+
+<?php $isDark = (isset($_GET['dark']) && $_GET['dark'] === 'true'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +11,37 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <?php if ($isDark): ?>
+        <link rel="stylesheet" href="css/theme-dark.css">
+    <?php endif; ?>
 </head>
 
-<body>
+
+<body <?= $isDark ? ' class="dark"' : '' ?>>
     <?php
     include_once 'sections/header.php';
-    include_once 'sections/cta.php';
-    include_once 'sections/grids.php';
     ?>
+
+    <div style="display:flex; width:100%">
+        <div class="sidebar"></div>
+        <div style="width:auto">
+            <?php
+            include_once 'sections/cta.php';
+            include_once 'sections/grids.php';
+            ?>
+            <h2><strong> Disclaimer: </strong></h2>
+            <p>
+                De crappy style was kompleet intensioneel. <br>
+                ik had zin om iets anders te maken wat "iets" anders was dan normaal. <br>
+                Ik kan een betere styling geven des nodig. <br>
+                maar je kan ook even kijken op <a href="https://nickesselman.nl">nickesselman.nl</a> voor hoe ik het ook
+                kan.
+            </p>
+        </div>
+
+        <div class="sidebar"></div>
+    </div>
+
 </body>
 
 </html>
