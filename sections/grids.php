@@ -23,10 +23,10 @@ sort($cats);
         <option value="">Sort by…</option>
         <option value="year-desc">Year: Newest First</option>
         <option value="year-asc">Year: Oldest First</option>
-        <option value="price-asc">Price: Low → High</option>
-        <option value="price-desc">Price: High → Low</option>
-        <option value="name-asc">Name: A → Z</option>
-        <option value="name-desc">Name: Z → A</option>
+        <option value="price-asc">Price: Low => High</option>
+        <option value="price-desc">Price: High => Low</option>
+        <option value="name-asc">Name: A => Z</option>
+        <option value="name-desc">Name: Z => A</option>
     </select>
 </div>
 
@@ -110,6 +110,9 @@ sort($cats);
 
 <!-- i placed the css here so i can inslude_once it in one command in index.php -->
 <style>
+    .cta-image {
+        color: transparent;
+    }
     :root {
         --cols:
             <?= intval($columns) ?>

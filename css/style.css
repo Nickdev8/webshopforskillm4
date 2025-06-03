@@ -8,7 +8,9 @@
   background-color: #ddd;
   margin: 0 auto;
 }
-
+.cta-overlay h2{
+  color: black;
+}
 /* inner flex-wrap grid of items */
 .contents {
   display: flex;
@@ -74,7 +76,7 @@
   background-repeat: repeat-y;
   background-position: center;
   background-size: 100% auto;
-  background-color: lightpink;
+  background-color: white;
   width: 10vw;
 }
 
